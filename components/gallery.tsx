@@ -6,37 +6,38 @@ import { galleryImages } from "@/utils/gallery-helpers"
 
 export function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [isHovering, setIsHovering] = useState(false)
   const carouselRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Add useEffect to handle wheel events only
+  // Add useEffect to handle wheel events
   useEffect(() => {
     const container = containerRef.current
     if (!container) return
 
     const handleWheel = (e: WheelEvent) => {
-      // Check if the event is from a mouse wheel (not touch)
-      if (e.type === 'wheel') {
-        e.preventDefault()
-        if (!carouselRef.current) return
-        
-        const direction = e.deltaY > 0 ? 1 : -1
-        const newIndex = Math.min(
-          Math.max(currentIndex + direction, 0),
-          galleryImages.length - 1
-        )
-        
-        scrollToImage(newIndex)
-      }
+      // Only handle wheel events when hovering
+      if (!isHovering) return
+
+      e.preventDefault()
+      if (!carouselRef.current) return
+      
+      const direction = e.deltaY > 0 ? 1 : -1
+      const newIndex = Math.min(
+        Math.max(currentIndex + direction, 0),
+        galleryImages.length - 1
+      )
+      
+      scrollToImage(newIndex)
     }
 
-    // Add wheel event listener with passive: false
+    // Add wheel event listener with passive: false to allow preventDefault
     container.addEventListener('wheel', handleWheel, { passive: false })
     
     return () => {
       container.removeEventListener('wheel', handleWheel)
     }
-  }, [currentIndex])
+  }, [currentIndex, isHovering])
 
 
   // Scroll to an image when indicator is clicked
@@ -68,7 +69,12 @@ export function Gallery() {
       className="animate-in fade-in slide-in-from-bottom-4 duration-1000"
     >
       {/* Simple Carousel */}
-      <div className="relative w-full max-w-4xl mx-auto mb-4">
+      <div 
+        ref={containerRef}
+        className="relative w-full max-w-4xl mx-auto mb-4"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         <div
           ref={carouselRef}
           className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide"
