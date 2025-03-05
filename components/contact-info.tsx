@@ -23,7 +23,12 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Telefon</p>
-                  <p className="text-lg text-primary">079 076 25 76</p>
+                  <a
+                    href="sms:+46790762576" // Updated link to open SMS
+                    className="text-lg text-primary transition-colors"
+                  >
+                    079 076 25 76
+                  </a>
                 </div>
               </div>
 
@@ -53,8 +58,12 @@ export function ContactInfo() {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm text-foreground font-medium mb-1">E-post</p>
-                  <p className="text-lg text-primary">info@fortunasalong.se</p>
+    <p className="text-sm text-foreground font-medium mb-1">E-post</p>
+    <a
+      href="mailto:info@fortunasalong.se"
+      className="text-lg text-primary transition-colors"
+    >
+      info@fortunasalong.se</a>
                 </div>
               </div>
             </div>
@@ -69,9 +78,9 @@ export function ContactInfo() {
                 </div>
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Öppettider</p>
-                  <p className="text-lg text-primary">Tisdag - Fredag: 11 - 18</p>
-                  <p className="text-lg text-primary">Lördag: 11 - 17</p>
-                  <p className="text-lg text-primary">Söndag & Måndag: Stängt</p>
+                  <p className="text-lg text-primary">Tis - Fre: 10 - 18</p>
+                  <p className="text-lg text-primary">Lör: 11 - 16</p>
+                  <p className="text-lg text-primary">Sön & Mån: Stängt</p>
                 </div>
               </div>
               <div
@@ -92,4 +101,3 @@ export function ContactInfo() {
     </div>
   )
 }
-
