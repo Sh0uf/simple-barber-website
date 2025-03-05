@@ -3,12 +3,16 @@
 import { useRef, useState, useEffect } from "react"
 import Image from "next/image"
 import { galleryImages } from "@/utils/gallery-helpers"
+import { usePrefetchImages } from "../app/hooks/usePrefetchImages"
 
 export function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isHovering, setIsHovering] = useState(false)
   const carouselRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+
+  // Prefetch all gallery images
+  usePrefetchImages(galleryImages.map(img => img.src))
 
   // Add useEffect to handle wheel events
   useEffect(() => {
@@ -93,6 +97,7 @@ export function Gallery() {
                   width={800}
                   height={250}
                   className="object-cover w-full h-full"
+                  priority={index === 0}
                 />
               </div>
             </div>
