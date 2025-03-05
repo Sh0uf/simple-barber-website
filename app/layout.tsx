@@ -21,7 +21,7 @@ Söndag & Måndag: Stängt
 
 Besök vår välkomnande salong där vi kombinerar många års erfarenhet med känsla för detaljer. Drop-in välkomna, tidsbokning rekommenderas.`,
   icons: {
-    icon: '/icon.ico',
+    icon: './icon.ico',
   },
 }
 
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="./icon.ico" />
+        <link rel="icon" href="../icon.ico" />
       </head>
       <body suppressHydrationWarning>
         <ThemeProvider
