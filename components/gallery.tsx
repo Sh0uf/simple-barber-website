@@ -90,7 +90,7 @@ export function Gallery() {
         >
           {galleryImages.map((image, index) => (
             <div key={index} className="flex-shrink-0 w-full justify-center snap-center">
-              <div className="aspect-[1/1] mx-10 relative rounded-lg overflow-hidden">
+              <div className="aspect-[1/1] mx-10 md:mx-auto md:w-1/2 relative rounded-lg overflow-hidden">
                 <Image
                   src={image.src}
                   alt={image.alt}
