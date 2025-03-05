@@ -5,8 +5,8 @@ const nextConfig = {
     unoptimized: true,
   },
   reactStrictMode: true,
-  basePath: "",
   assetPrefix: "",
+  basePath: "",
   trailingSlash: true,
 }
 
