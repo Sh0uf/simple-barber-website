@@ -9,7 +9,7 @@ export function ContactInfo() {
         className="animate-in fade-in slide-in-from-bottom-4 duration-1000 p-8 mx-auto"
       >
         <h2 className="text-4xl font-bold text-center mb-12 text-primary ">
-          Kontakt
+          Kontakt & Bokning
         </h2>
 
         <div className="">
@@ -41,13 +41,13 @@ export function ContactInfo() {
                 <div>
                   <p className="text-sm text-foreground font-medium mb-1">Instagram</p>
                   <a
-                    href="https://instagram.com/fortuna_salong"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg text-primary transition-colors"
-                  >
-                    @fortuna_salong
-                  </a>
+  href="https://instagram.com/direct/t/fortuna_salong"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-lg text-primary transition-colors"
+>
+  @fortuna_salong
+</a>
                 </div>
               </div>
 

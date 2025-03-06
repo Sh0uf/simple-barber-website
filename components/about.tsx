@@ -8,8 +8,8 @@ export function About() {
       className="animate-in fade-in slide-in-from-bottom-4 duration-1000"
     >
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="flex-1 max-w:xl justify-center items-center">
-          <h3 className="text-2xl font-bold mb-4 text-primary">Om Fortuna Salong</h3>
+        <div className="flex-1 max-w:md justify-center items-center">
+          <h2 className="text-2xl font-bold mb-4 text-primary">Om Fortuna Salong</h2>
           <p className="mb-4 justify-center items-center ">
             Fortuna Salong är en modern och välrenommerad frisörsalong som specialiserar sig på professionell hårvård, klippning, skäggtrimning och rakning. <br/> Med gedigen erfarenhet och en stark passion för yrket håller vi oss ständigt uppdaterade med de senaste trenderna och teknikerna för att kunna erbjuda förstklassiga tjänster.
           </p>

@@ -4,10 +4,11 @@
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-swanky);
+    font-family: var(--font-playfair);
   }
 
   :root {
+    --font-playfair: 'Playfair Display', cursive;
     --background: 240 0% 90%;
     --foreground: 37.1 57.3% 42%;
     --card: 240 0% 90%;
