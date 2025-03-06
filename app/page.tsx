@@ -34,8 +34,8 @@ export default function Home() {
             <Image
               src={theme === "dark" ? getImagePath("/logo-invert.png") : getImagePath("/logo.png")}
               alt="Fortuna Salong Logo"
-              width={150}
-              height={150}
+              width={500}
+              height={500}
               className="mx-auto"
               priority
             />
