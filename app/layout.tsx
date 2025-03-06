@@ -2,6 +2,14 @@ import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Swanky_and_Moo_Moo } from 'next/font/google'
+
+const swankyAndMooMoo = Swanky_and_Moo_Moo({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-swanky',
+})
 
 export const metadata: Metadata = {
   title: "Fortuna Salong",

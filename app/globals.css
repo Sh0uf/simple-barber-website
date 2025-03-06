@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-swanky);
+  }
+
   :root {
     --background: 240 0% 90%;
     --foreground: 37.1 57.3% 42%;
