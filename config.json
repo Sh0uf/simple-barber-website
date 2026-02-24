@@ -102,7 +102,7 @@
         { "name": "Huvudmassage", "price": "100 kr" },
         { "name": "Trådning ansikte", "price": "250 kr" },
         { "name": "Forma ögonbryn", "price": "100 kr" },
-        { "name": "Forma ögonbryn + Trådning ansikte", "price": Från } "350 kr" }
+        { "name": "Forma ögonbryn + Trådning ansikte", "price": "Från 350 kr" }
       ]
     }
   ],
