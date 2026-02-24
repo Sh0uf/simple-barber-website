@@ -18,7 +18,7 @@
       "@context": "https://schema.org",
       "@type": "HairSalon",
       "name": "Fortuna Salong | Frisör & Barber på Tågaborg, Helsingborg",
-      "url": "https://fortunasalong.se"
+      "url": "https://fortunasalong.se",
       "logo": "https://fortunasalong.se/logo.png",
       "image": "https://fortunasalong.se/logo.png",
       "description": "Professionella barberartjänster i hjärtat av Helsingborg",
@@ -77,9 +77,9 @@
       "icon": "Scissors",
       "name": "Klippning",
       "items": [
-        { "name": "Herr Klippning", "price": "300kr" }
-        { "name": "Herr + Skägg", "price": "Från 400kr" }
-        { "name": "Senior", "price": "270kr" }
+        { "name": "Herr Klippning", "price": "300kr" },
+        { "name": "Herr + Skägg", "price": "Från 400kr" },
+        { "name": "Senior", "price": "270kr" },
         { "name": "Ungdommar", "price": "270kr" },
         { "name": "Små Barn", "price": "230kr" }
       ]
