@@ -83,7 +83,7 @@ export function renderHtml(
   googleSiteVerification: string,
 ): string {
   const { siteInfo, seo, contact, about, services } = config;
-  const description = buildDescription(config);
+  const description = seo.description || buildDescription(config);
   const verification = googleSiteVerification || seo.googleSiteVerification;
 
   const gallerySlides = galleryImages
